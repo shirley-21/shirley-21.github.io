@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a mi Portafolio Profesional!</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mí</a></li>
+                <li><a href="#informacion">Información Personal</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#experiencia">Experiencia Profesional</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#conocimientos">Conocimientos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li> 
+
+            </ul>
+        </nav>
+    </header>
+    <div class="image-container">
+        <img src="img/por.jpg" style="max-width: 100%; height: auto;" alt="Descripción de la imagen"> <div class="text-overlay">
+            <h2>SHIRLEY LIZETH SÁNCHEZ YANOJA</h2>
+         <img src="img/chi.png" style="width: 200px; height: 230px; ">  
+        </div>
+    </div>
+    <main>
+        <section id="sobre" class="section-with-image">
+            <div>
+                <h2>SOBRE MI</h2>
+                <p>Soy una persona dinámica, metódica y comprometida, con excelentes habilidades interpersonales. Siempre estoy dispuesta a asumir nuevos desafíos y dar lo mejor de mí en cada tarea que se me encomienda. Busco una posición que me permita seguir aprendiendo y creciendo profesionalmente mientras contribuyo al éxito de la empresa.</p>
+            </div>
+            <img src="img/ico.png" style="width: 150px; height: 150px;">
+        </section>
+
+         <section id="informacion-personal" class="section-with-image-info">
+            <div>
+            <h2>INFORMACIÓN PERSONAL</h2>
+            <p><b>Nombre completo:</b> Shirley Lizeth Sánchez Yanoja</p>
+            <p><b>Edad:</b> 21 años</p>
+            <p><b>Celular:</b> 953 - 019 - 088</p>
+            <p><b>Correo:</b> shirley21.sanchez02.gmail.com</p>
+            <p><b>Dirección:</b> Nuevo Imperial - Cañete</p>
+        </div>  
+        <img src="img/in.png" style="width: 150px; height: 150px;">      
+        </section>
+
+        <section id="estudios" class="section-with-image-estudios">
+         <div>
+            <h2>ESTUDIOS</h2>
+            <p><b>Colegio Primario</b><br>
+                <ul>
+                    <li>2008-2012</li>
+                    <li>Manuel Gonzales Prada</li>
+                </ul>
+            <p><b>Colegio Secundario</b><br>
+               <ul>
+                <li>2013-2018</li>
+                <li>Manuel Gonzales Prada</li>
+               </ul>
+            <p><b>Superior</b>
+            <ul>
+               <li> Actualmente estudiante de la carrera de arquitectura de plataformas y recursos TI, en el V ciclo.
+            </li>
+            </ul>
+            </div>
+            <img src="img/es.png" style="width: 150px; height: 150px;">
+
+        </section>
+        <section id="experiencia" class="section-with-image-practicas">
+            <div>
+            <h2>EXPERIENCIA DE PRACTICAS PROFESIONALES </h2>
+            <p><strong>Instituto Superior Tecnológico de Cañete</strong></p>
+            <ul>
+                <li>Atención al cliente</li>
+                <li>Redacción de documentos</li>
+                <li>Búsqueda de documentos en registros</li>
+            </ul>
+            </div>
+            <img src="img/ex.jpg" style="width: 150px; height: 150px;">
+            </section>
+
+            <section id="proyectos">
+                <h2>PROYECTOS</h2> 
+                <div class="images-container">
+                    <img src="img/pro1.png" alt="">
+                    <img src="img/pro2.jpg" alt="">
+                    <img src="img/pro3.jpg" alt="">
+                </div>
+            </section>
+            
+        </section><br>
+        <section id="conocimientos" class="section-with-image-conocimientos">
+            <div>
+            <h2>CONOCIMIENTOS EN SOFTWARE</h2>
+            <ul>
+                <li>Excel</li>
+                <li>Word</li>
+                <li>Power point</li>
+                <li>Canva</li>
+            </ul>
+        </div>
+        <img src="img/conoci.png" style="width: 150px; height: 150px;">
+        </section>
+        
+        <section id="habilidades" class="section-with-image-habilidades">
+         <div>
+            <h2>HABILIDADES</h2>
+            <ul id="habilidades-lista">
+                <li> Trabajo en equipo<div data-porcentaje="100"></div> </li>
+                <li> Planificación <div data-porcentaje="100"></div> </li>
+                <li> Creatividad <div data-porcentaje="100"></div> </li>
+                <li> Responsabilidad <div data-porcentaje="100"></div> </li>
+              </ul>
+         
+            <script src="habilidades.js"></script>
+        </div> 
+        <img src="img/habi.jpg" style="width: 100px; height: 100px;">
+
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Shirley Lizeth Sanchez Yanoja &copy; 2024 </p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="img/tiktok.jpg" alt="TikTok"></a>
+          
+        </div>
+    </footer>
+</body>
+</html>

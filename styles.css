@@ -1,0 +1,299 @@
+   body {
+      padding: 20px;
+  }
+
+  section {
+      padding: 20px;
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+header {
+    background-color: #f3acac;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.text-overlay h2 {
+  display: inline-block; /* tamaño de letra*/
+  margin: 0; /* Ajusta el margen */
+  font-size: 30px;
+
+}
+
+.text-overlay img {
+  display: block;
+  margin: 10px auto; /* Ajusta el margen  */
+  max-width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 1px solid #f3acac;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+p {
+    line-height: 1.6;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #f3acac;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f3acac;
+}
+
+.section-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.section-with-image img {
+  margin-left: 20px; /* Espacio entre la imagen ytexto */
+}
+
+.section-with-image div {
+  flex: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.section-with-image-info {
+  display: flex;
+  align-items: center;
+}
+
+.section-with-image-info img {
+  margin-right: 20px; 
+}
+
+.section-with-image-info div {
+  flex: 1; 
+}
+
+.section-with-image-estudios {
+  display: flex;
+  align-items: center;
+}
+
+.section-with-image-estudios img {
+ 
+  margin-right: 20px;
+}
+
+.section-with-image-estudios div {
+  flex: 1; 
+}
+
+.section-with-image-practicas {
+  display: flex;
+  align-items: center;
+}
+
+.section-with-image-practicas img {
+  margin-right: 20px; 
+}
+
+.section-with-image-practicas div {
+  flex: 1; 
+}
+.section-with-image-conocimientos {
+  display: flex;
+  align-items: center;
+}
+
+.section-with-image-conocimientos img {
+
+  margin-right: 20px; 
+}
+
+.section-with-image-conocimientos div {
+  flex: 1; 
+}
+
+ul#habilidades-lista {
+  position: relative;
+  flex-direction: column;
+}
+
+ul#habilidades-lista li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+ul#habilidades-lista span {
+  display: inline-block;
+  width: 35%; 
+  text-align: right;
+  margin-right: 10px; 
+}
+
+ul#habilidades-lista li div {
+  position: relative;
+  width: 55%;
+  height: 3px; 
+  margin-left: 10px;
+  background-color: #ccc;
+}
+
+ul#habilidades-lista li div:before {
+  content: attr(data-porcentaje) '%';
+  position: absolute;
+  top: -20px;
+  right: 0; 
+  color: black;
+  font-weight: bold;
+}
+
+ul#habilidades-lista li div:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background: #f3acac;
+  animation: crecer 1s ease-in-out forwards;
+}
+
+@keyframes crecer {
+  from {width: 0}
+  to {width: 100%} 
+}
+
+ul#habilidades-lista li[data-porcentaje="100"]:before { width: 100%; }
+ul#habilidades-lista li[data-porcentaje="100"]:before { width: 100%; }
+ul#habilidades-lista li[data-porcentaje="100"]:before { width: 100%; }
+
+.section-with-image-habilidades {
+  display: flex;
+  align-items: center;
+}
+
+.section-with-image-habilidades img {
+  margin-right: 20px;  /
+}
+
+.section-with-image-habilidades div {
+  flex: 1; 
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan espacio horizontal */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.images-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px; /* Ajusta margen  */
+  max-height: 200px; /* Ajusta la altura máxima */
+  object-fit: cover; 
+}
+
+.images-container img:last-child {
+  margin-right: 0; 
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales a {
+  margin: 0 10px; /* Ajusta el margen entre las imágenes */
+}
+
+.redes-sociales img {
+  width: 30px; /* Ajusta el tamaño de las imágenes */
+  height: auto;
+}
+
+footer {
+    background-color: #f3acac;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
